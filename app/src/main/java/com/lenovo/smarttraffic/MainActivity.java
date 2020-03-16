@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lenovo.smarttraffic.bean.User;
+import com.lenovo.smarttraffic.ui.activity.Activity_Weather;
 import com.lenovo.smarttraffic.ui.activity.BaseActivity;
 import com.lenovo.smarttraffic.ui.activity.Item1Activity;
 import com.lenovo.smarttraffic.ui.activity.LoginActivity;
@@ -173,6 +174,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                 break;
             case R.id.item_2:
                 string = "天气预报";
+                startActivity(new Intent(getApplicationContext(), Activity_Weather.class));
                 break;
             case R.id.item_3:
                 string = "item3";

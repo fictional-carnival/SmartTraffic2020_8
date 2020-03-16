@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:text="北京"
+                    android:textSize="@dimen/margin_50"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:text="2020年3月11日"
+                    android:textSize="@dimen/margin_50"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/week"
+                    android:text="星期三"
+                    android:textSize="@dimen/margin_50"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:text="18度"
+                    android:textSize="@dimen/margin_50"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:id="@+id/type"
+                    android:text="晴"
+                    android:textSize="@dimen/margin_50"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/weather_img"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/sun" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/grid_top"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:numColumns="6"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_marginTop="10dp"
+                android:background="#f2f2f2">
+
+            </com.github.mikephil.charting.charts.LineChart>
+
+            <GridView
+                android:id="@+id/grid_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:numColumns="6"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
