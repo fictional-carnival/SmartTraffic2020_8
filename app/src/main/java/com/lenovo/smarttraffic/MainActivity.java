@@ -21,6 +21,7 @@ import com.lenovo.smarttraffic.bean.User;
 import com.lenovo.smarttraffic.ui.activity.Activity_Weather;
 import com.lenovo.smarttraffic.ui.activity.BaseActivity;
 import com.lenovo.smarttraffic.ui.activity.Item1Activity;
+import com.lenovo.smarttraffic.ui.activity.LoadStatusActivity;
 import com.lenovo.smarttraffic.ui.activity.LoginActivity;
 import com.lenovo.smarttraffic.ui.fragment.DesignFragment;
 import com.lenovo.smarttraffic.ui.fragment.MainContentFragment;
@@ -170,7 +171,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                 string = "个人";
                 break;
             case R.id.item_1:
-                string = "item1";
+                string = "路况分析";
+                startActivity(new Intent(getApplicationContext(), LoadStatusActivity.class));
                 break;
             case R.id.item_2:
                 string = "天气预报";

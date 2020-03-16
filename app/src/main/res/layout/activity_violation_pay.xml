@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/list_tab_toolbar"
+        layout="@layout/toolbar_main" />
+
+    <TextView
+        android:textSize="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="向商家付款："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_dder"
+            android:textSize="35dp"
+            android:layout_margin="30dp"
+            android:text="asfsafasfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/tv_er"
+            android:src="@mipmap/icon_erweima"
+            android:layout_width="350dp"
+            android:layout_height="350dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_ll"
+        android:gravity="center"
+        android:background="#97CCCCCC"
+        android:layout_marginTop="-560dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/border_elipse"
+            android:layout_width="400dp"
+            android:layout_height="300dp">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textSize="35dp"
+                android:text="支付金额"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:textSize="35dp"
+                android:text="支付金额"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ccc" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:textColor="#00BCD4"
+                   android:gravity="center"
+                   android:textSize="30dp"
+                   android:text="取消"
+                   android:id="@+id/tv_cancel"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+
+               <View
+                   android:background="#CCC"
+                   android:layout_width="2dp"
+                   android:layout_height="match_parent" />
+               <TextView
+                   android:textColor="#00BCD4"
+                   android:gravity="center"
+                   android:textSize="30dp"
+                   android:text="确认"
+                   android:id="@+id/tv_com"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+           </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

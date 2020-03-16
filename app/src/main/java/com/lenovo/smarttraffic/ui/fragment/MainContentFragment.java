@@ -19,11 +19,13 @@ import com.lenovo.smarttraffic.Constant;
 import com.lenovo.smarttraffic.InitApp;
 import com.lenovo.smarttraffic.R;
 import com.lenovo.smarttraffic.bean.Weather;
+import com.lenovo.smarttraffic.ui.activity.CheWeiActivity;
 import com.lenovo.smarttraffic.ui.activity.Activity_QianDao;
 import com.lenovo.smarttraffic.ui.activity.Activity_Weather;
 import com.lenovo.smarttraffic.ui.activity.DitieActivity;
 import com.lenovo.smarttraffic.ui.activity.Item1Activity;
 import com.lenovo.smarttraffic.ui.activity.LoginActivity;
+import com.lenovo.smarttraffic.ui.activity.QueryCarActivity;
 
 import org.json.JSONObject;
 
@@ -252,8 +254,10 @@ public class MainContentFragment extends BaseFragment {
                     startActivity(new Intent(getContext(), Activity_Weather.class));
                     break;
                 case R.id.rl_1:
+                    startActivity(new Intent(getContext(), QueryCarActivity.class));
                     break;
                 case R.id.rl_2:
+                    startActivity(new Intent(getContext(), CheWeiActivity.class));
                     break;
                 case R.id.rl_3:
                     startActivity(new Intent(getContext(), DitieActivity.class));
