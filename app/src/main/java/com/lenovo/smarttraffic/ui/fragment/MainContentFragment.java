@@ -238,6 +238,7 @@ public class MainContentFragment extends BaseFragment {
         rl_3.setOnClickListener(this::onClick);
         RelativeLayout rl_4 = view.findViewById(R.id.rl_4);
         rl_4.setOnClickListener(this::onClick);
+
     }
 
 
